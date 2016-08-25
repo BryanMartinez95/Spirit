@@ -19,9 +19,5 @@ build:
     # Steps make up the actions in your pipeline
     # Read more about steps on our dev center:
     # http://devcenter.wercker.com/docs/steps/index.html
-  steps:
-  - arjen/hugo-build:
-    version: "HEAD"
-    theme: herring-cove
-    flags: --buildDrafts=true
-
+steps:
+  - arjen/hugo-build@1.11.0
