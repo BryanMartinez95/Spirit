@@ -31,4 +31,4 @@ deploy:
         token: $GIT_TOKEN
         domain: BryanMartinez95.github.io
         basedir: public
-        
+        repo: BryanMartinez95/BryanMartinez95.github.io
