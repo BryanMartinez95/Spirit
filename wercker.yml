@@ -23,12 +23,13 @@ build:
   - arjen/hugo-build:
     theme: herring-cove
     flags: --buildDrafts=true
+
 deploy:
-  steps:
-    - install-packages:
-        packages: git ssh-client
-    - lukevivier/gh-pages@0.2.1:
-        token: $GIT_TOKEN
-        domain: BryanMartinez95.github.io
-        basedir: public
-        repo: BryanMartinez95/BryanMartinez95.github.io
+    steps:
+        - install-packages:
+            packages: git ssh-client
+        - leipert/git-push:
+            gh_oauth: $GIT_TOKEN
+            repo: BryanMartinez95/BryanMartinez95.github.io
+            branch: master
+            basedir: public
