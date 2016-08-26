@@ -1,3 +1,8 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://bryanmartinez95.github.io/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Welcome to Spirit"
+publishdir = "publish"
+
+[params]
+  description = "Tesla's Awesome Hugo Site"
+  author = "Nikola Tesla"
