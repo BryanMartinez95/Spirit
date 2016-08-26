@@ -1,7 +1,6 @@
 baseurl = "https://bryanmartinez95.github.io/"
 languageCode = "en-us"
 title = "Welcome to Spirit"
-publishdir = "publish"
 
 [params]
   description = "Tesla's Awesome Hugo Site"
