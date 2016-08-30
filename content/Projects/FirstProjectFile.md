@@ -5,4 +5,4 @@ title = "about"
 
 +++
 
-Currently In Development!
+Projects In Development!
