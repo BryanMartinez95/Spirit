@@ -11,3 +11,15 @@
 .lightgrey{
     color: #FFFFFF;
 }
+.profilepic{
+    border-radius:50%;
+    height:50px;
+    width:50px;
+}
+.centerContent{
+  margin: 0 auto;
+  max-width: 50em;
+}
+.construction {
+    width:50%;
+}

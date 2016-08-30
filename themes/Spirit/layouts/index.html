@@ -4,17 +4,21 @@
     <head>
         <meta charset="utf-8">
         <title>{{ .Title }}</title>
-        <link href="{{ .Site.BaseURL }}/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ .Site.BaseURL }}/css/bootstrap.css" rel="stylesheet">
         <link href="{{ .Site.BaseURL }}/css/styles.css" rel="stylesheet">
     </head>
     <body>
-        <div> <!-- Page -->
+    <div> <!-- Page -->
         {{ template "theme/partials/header.html" }}
-        <div> <!-- Body -->
-            <h3>I AM LE BODY</h3>
-        </div>
+        <div class="container centerContent"> <!-- Body -->
+            <h2>Currently In Production!</h2>
+            <div class="row">
+            <img class="col-md-12 construction" src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
+            </div>
+
         
-        {{ template "theme/partials/footer.html" }}	
+        <!--{{ template "theme/partials/footer.html" }}	-->
+        </div>
         </div>
         <!-- Scripts -->
         {{ template "theme/partials/bundle.html" }}	
