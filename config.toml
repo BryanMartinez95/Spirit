@@ -5,3 +5,5 @@ title = "Welcome to Spirit"
 [params]
   description = "Spirit"
   author = "Bryan Martinez"
+[author]
+  name="Bryan Martinez"

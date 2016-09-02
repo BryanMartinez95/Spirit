@@ -14,9 +14,3 @@ min_version = 0.15
   name = "Bryan Martinez"
   homepage = ""
 
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
-
