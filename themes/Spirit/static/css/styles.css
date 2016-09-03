@@ -1,6 +1,17 @@
+body,
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: 'Roboto', sans-serif !important;
+}
+.body {
+  background-color: #f8f8f8;
+}
 .orange-header {
-  color: #e88c30;
-  background-color: #e88c30;
+  color: #f96e5b;
+  background-color: #f96e5b;
 }
 .profilepic {
   border-radius: 50%;
@@ -13,6 +24,13 @@
 }
 .construction {
   width: 50%;
+}
+.navbar-default {
+  background-color: #f96e5b;
+}
+.nav-list > li > a {
+  color: white !important;
+  font-size: 20px;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -41,7 +59,7 @@
   box-shadow: 0 1px 0 #666666, 0 5px 0 #444444, 0 6px 6px rgba(0, 0, 0, 0.6);
   cursor: pointer;
 }
-footer {
+.page-footer {
   bottom: 0;
   position: fixed;
   text-align: right;
@@ -56,4 +74,21 @@ footer {
 }
 .footer-link {
   color: #545454;
+}
+.card {
+  background-color: #ffffff;
+  margin: 1%;
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.card-picture {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card-hover {
+  transition: background-color 0.3s, color 0.15s, box-shadow 0.3s, opacity 0.3s;
+}
+.card-hover:hover {
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }

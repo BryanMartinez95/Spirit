@@ -1,3 +1,29 @@
 {{ partial "header.html" . }}
-<h1>Blog List</h1>
+<div class="container-fluid">
+<h1 class="text-center">Blog Posts</h1>
+    <div class="row">
+    <ul class="card-list">
+        {{ range .Data.Pages }}
+        <div class="w3-card-8 card-hover col-lg-3 col-md-5 col-md-12 card ">
+            <img class="card-picture" src="http://i.imgur.com/RgTYBgg.png" alt="gochi">
+            <header class="w3-container">
+                <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+            </header>
+            <div class="w3-container">
+            <p>{{.Summary}}</p>
+                <!--{{ if .Truncated }}
+                <div class="read-more-link">
+                    <a href="{{ .RelPermalink }}">Read More…</a>
+                </div>
+                {{end}}-->
+            </div>
+            <!--<footer class="w3-container">
+                {{ .Date.Format "Mon, Jan 2, 2006" }}
+            </footer>-->
+
+        </div>
+        {{ end }}
+    </ul>
+    </div>
+    </div>
 {{partial "footer.html" .}}
