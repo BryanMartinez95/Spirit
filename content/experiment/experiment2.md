@@ -2,7 +2,7 @@
 date = "2016-09-01T22:15:18-06:00"
 draft = true
 title = "experiment2"
-
+image = "http://i.imgur.com/9V1Ez4e.gif"
 +++
 
 <h2>lorem ipsum</h2>

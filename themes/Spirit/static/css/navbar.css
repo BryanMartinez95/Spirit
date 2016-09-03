@@ -1,0 +1,30 @@
+.navbar-default {
+  background-color: #f96e5b;
+}
+.nav-list > li > a {
+  color: #ffffff !important;
+  font-size: 17px;
+}
+.navbar-default .navbar-nav > li > a {
+  transition: color .25s;
+  position: relative;
+  border-bottom: 3px solid transparent;
+  width: 0%;
+  transition: 0.5s ease;
+  white-space: nowrap;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #23527c !important;
+  border-bottom: 3px solid #23527c;
+  width: 100%;
+}
+.orange-header {
+  color: #f96e5b;
+  background-color: #f96e5b;
+}
+.profilepic {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}

@@ -3,6 +3,7 @@ date = "2016-08-31T03:05:23-06:00"
 draft = true
 title = "About"
 type = "about"
+image = "http://i.imgur.com/NaPRyjb.png"
 +++
 
 <h3>about page</h3>

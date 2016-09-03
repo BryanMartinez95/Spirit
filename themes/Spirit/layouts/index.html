@@ -7,26 +7,46 @@
         <link href="{{ .Site.BaseURL }}/css/bootstrap.css" rel="stylesheet">
         <link href="{{ .Site.BaseURL }}/css/w3.css" rel="stylesheet">
         <link href="{{ .Site.BaseURL }}/css/styles.css" rel="stylesheet">
+        <link href="{{ .Site.BaseURL }}/css/navbar.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     </head>
     <body>
     <div class="body"> <!-- Page -->
         {{ template "theme/partials/nav.html" }}
-        <div class="container centerContent"> <!-- Body -->
-            <h2>Currently In Production!</h2>
-            <button class="test">Click me!</button>
+        <div class="container-fluid"> <!-- Body -->
+            <h1 class="text-center">Currently In Production!</h2>
             <div class="row">
-                <img class="col-md-12 construction" src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
-                <!--<img class="col-md-12 construction" src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>-->
-                <!--<img class="col-md-12 construction" src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>-->
+                <img class="col-md-3 " src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
+                <img class="col-md-3 " src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
+                <img class="col-md-3 " src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
+                <img class="col-md-3 " src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
             </div>
-            <div class="row">
-                <ul class="posts">
-                    {{ range .Data.Pages }}
-                    <li><span><a href="{{ .RelPermalink }}">{{ .Title }}</a><time class="pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</h4></time></span></span></li>
-                    {{ end }}
-                </ul>
-            </div>  
+                <div class="container-fluid">
+                    <div class="row">
+                    <ul class="card-list">
+                        {{ range .Data.Pages }}
+                        <div class="w3-card-8 card-hover col-lg-3 col-md-5 col-md-12 card ">
+                            <img class="card-picture" src="{{.Params.image}}" alt="gochi">
+                            <header class="w3-container">
+                                <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+                            </header>
+                            <div class="w3-container">
+                            <!--<p>{{.Summary}}</p>-->
+                                <!--{{ if .Truncated }}
+                                <div class="read-more-link">
+                                    <a href="{{ .RelPermalink }}">Read More…</a>
+                                </div>
+                                {{end}}-->
+                            </div>
+                            <!--<footer class="w3-container">
+                                {{ .Date.Format "Mon, Jan 2, 2006" }}
+                            </footer>-->
+
+                        </div>
+                        {{ end }}
+                    </ul>
+                    </div>
+                </div>
         </div>
         {{ template "theme/partials/footer.html" }}	
     </div>
