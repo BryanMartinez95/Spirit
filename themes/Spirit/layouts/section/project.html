@@ -1,8 +1,10 @@
 {{ partial "header.html" . }}
-<h1>Project List</h1>
-    <ul>
+<div class="flex-container">
+<h1 class="flex-item">Project List</h1>
+    <ul class="flex-item">
     {{ range .Data.Pages }}
-    <li class="card"><span><a href="{{ .RelPermalink }}">{{ .Title }}</a><time class="pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</h4></time></span></span></li>
+    <li class="card"><span><a href="{{ .RelPermalink }}">{{ .Title }}</a><time class="">{{ .Date.Format "Mon, Jan 2, 2006" }}</h4></time></span></span></li>
     {{ end }}
     </ul>
+</div>
 {{partial "footer.html" .}}

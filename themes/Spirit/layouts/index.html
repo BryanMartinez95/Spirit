@@ -4,10 +4,14 @@
     <head>
         <meta charset="utf-8">
         <title>{{ .Title }}</title>
-        <link href="{{ .Site.BaseURL }}/css/bootstrap.css" rel="stylesheet">
-        <link href="{{ .Site.BaseURL }}/css/w3.css" rel="stylesheet">
+        <!--<link href="{{ .Site.BaseURL }}/css/bootstrap.css" rel="stylesheet">-->
+        <!--<link href="{{ .Site.BaseURL }}/css/w3.css" rel="stylesheet">-->
+        <link href="{{ .Site.BaseURL }}/css/normalize.css" rel="stylesheet">
         <link href="{{ .Site.BaseURL }}/css/styles.css" rel="stylesheet">
         <link href="{{ .Site.BaseURL }}/css/navbar.css" rel="stylesheet">
+        <link href="{{ .Site.BaseURL }}/css/card.css" rel="stylesheet">
+        <link href="{{ .Site.BaseURL }}/css/footer.css" rel="stylesheet">
+        <link href="{{ .Site.BaseURL }}/css/materialize.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     </head>
     <body>
@@ -15,17 +19,17 @@
         {{ template "theme/partials/nav.html" }}
         <div class="container-fluid"> <!-- Body -->
             <h1 class="text-center">Currently In Production!</h2>
-            <div class="row">
-                <img class="col-md-3 " src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
-                <img class="col-md-3 " src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
-                <img class="col-md-3 " src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
-                <img class="col-md-3 " src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
+            <div class="">
+                <img class="" src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
+                <img class="" src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
+                <img class="" src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
+                <img class="" src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
             </div>
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="">
                     <ul class="card-list">
                         {{ range .Data.Pages }}
-                        <div class="w3-card-8 card-hover col-lg-3 col-md-5 col-md-12 card ">
+                        <div class="card">
                             <img class="card-picture" src="{{.Params.image}}" alt="gochi">
                             <header class="w3-container">
                                 <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>

@@ -5,9 +5,13 @@ h3,
 p,
 a {
   font-family: 'Roboto', sans-serif !important;
+  line-height: 2em;
 }
 .body {
   background-color: #f8f8f8;
+}
+.flex-container {
+  display: flex;
 }
 .centerContent {
   margin: 0 auto;
@@ -15,36 +19,4 @@ a {
 }
 .construction {
   width: 20%;
-}
-.page-footer {
-  bottom: 0;
-  position: fixed;
-  text-align: right;
-  width: 100%;
-}
-.footer-icon-list li {
-  display: inline;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-.footer-link {
-  color: #545454;
-}
-.card {
-  background-color: #ffffff;
-  margin: 1%;
-  position: relative;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.card-picture {
-  width: 100%;
-}
-.card-hover {
-  transition: background-color 0.3s, color 0.15s, box-shadow 0.3s, opacity 0.3s;
-}
-.card-hover:hover {
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }

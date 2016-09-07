@@ -1,22 +1,36 @@
 @import "variables.less";
 
-.navbar-default{
+.navbar-flex-group{
+    display:flex;
     background-color:@orange;
-}
-.nav-list > li > a{
-    color: @lightgrey !important;
-    font-size: 17px;
+    border-bottom-right-radius:5px;
+    border-bottom-right-radius:5px;
+    line-height:normal !important;
 }
 
-.navbar-default .navbar-nav > li > a{
-    transition: color .25s;
-    position:relative;
+
+.nav-list{
+    list-style-type: none;
+    display:inline-flex;
+    align-self: flex-end;
+    margin-left:auto;
+}
+
+ .nav-list > li > a{
+    line-height:normal !important;
+    color: @lightgrey !important;
+    padding: 10px 15px;
+    font-size: 17px;
+    // position:relative;
     border-bottom: 3px solid transparent;
     width: 0%;
+    text-decoration: none;
+    transition: color .25s;
     transition: 0.5s ease;
-    white-space: nowrap;
+    
+
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+.nav-list  > li > a:hover{
     color:#23527c !important;
     border-bottom:3px solid #23527c;
     width: 100%;
