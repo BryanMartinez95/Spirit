@@ -43,6 +43,9 @@
     line-height:normal !important;
     color: @lightgrey !important;
     font-size: 120%;
+    border-right: 1px solid;
+    border-left: 2px solid;
+    border-spacing: 10px;
     text-decoration:none;
     background-color:transparent;
     transition: color .25 ease-in-out;
@@ -63,6 +66,12 @@
     width:50px;
 }
 
+.menu {
+    padding-top: 10px;
+    padding-left:5px;
+    color: @grey;
+}
+
 
 
 
@@ -78,8 +87,9 @@
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
+    border-radius: 2px;
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: @darkorange; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -89,10 +99,28 @@
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 2.5em;
+    color: @lightgrey;
     display: block;
     transition: 0.3s
+}
+.mobile-item {
+    border-bottom: 1px solid @grey;
+}
+.mobile-item-top {
+    border-top: 1px solid @grey;
+    border-bottom: 1px solid @grey;
+}
+.mobile-item:hover{
+    color:#23527c !important;
+    padding-left:16px;
+    // border-bottom: 1px solid #23527c;
+}
+.mobile-item-top:hover {
+    color:#23527c !important;
+    padding-left:16px;
+    // border-top: 1px solid #23527c;
+    // border-bottom: 1px solid #23527c;
 }
 
 /* When you mouse over the navigation links, change their color */

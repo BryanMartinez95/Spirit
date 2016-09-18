@@ -1,8 +1,10 @@
 {{ partial "header.html" . }}
+<div class= "page-flex-container">
 <h1>Experiment List</h1>
     {{ range .Data.Pages }}
     <div class="">
         <li><span><a href="{{ .RelPermalink }}">{{ .Title }}</a><time class="">{{ .Date.Format "Mon, Jan 2, 2006" }}</h4></time></span></span></li>
     </div>
     {{ end }}
+    </div>
 {{partial "footer.html" .}}

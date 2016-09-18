@@ -36,6 +36,9 @@
   line-height: normal !important;
   color: #ffffff !important;
   font-size: 120%;
+  border-right: 1px solid;
+  border-left: 2px solid;
+  border-spacing: 10px;
   text-decoration: none;
   background-color: transparent;
   transition: color 0.25 ease-in-out;
@@ -53,6 +56,11 @@
   height: 50px;
   width: 50px;
 }
+.menu {
+  padding-top: 10px;
+  padding-left: 5px;
+  color: #f8f8f8;
+}
 /* The side navigation menu */
 .sidenav {
   height: 100%;
@@ -64,8 +72,9 @@
   z-index: 1;
   /* Stay on top */
   top: 0;
+  border-radius: 2px;
   left: 0;
-  background-color: #111;
+  background-color: #eb5a4b;
   /* Black*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
@@ -78,10 +87,25 @@
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 2.5em;
+  color: #ffffff;
   display: block;
   transition: 0.3s;
+}
+.mobile-item {
+  border-bottom: 1px solid #f8f8f8;
+}
+.mobile-item-top {
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid #f8f8f8;
+}
+.mobile-item:hover {
+  color: #23527c !important;
+  padding-left: 16px;
+}
+.mobile-item-top:hover {
+  color: #23527c !important;
+  padding-left: 16px;
 }
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover,

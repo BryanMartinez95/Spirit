@@ -7,9 +7,9 @@
         <span class="icon-bar"></span>
       </button>-->
       <!--<li class="icon">-->
-    <a href="javascript:void(0);" onclick="openNav()">&#9776;</a>
+    <a class="flex-item menu" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
   <!--</li>-->
-      <a class="flex-item" href="{{ .Site.BaseURL }}/"><img src="http://i.imgur.com/SCxqq90.png" class="profilepic" alt="Profile Picture"></a>
+      <!--<a class="flex-item" href="{{ .Site.BaseURL }}/"><img src="http://i.imgur.com/SCxqq90.png" class="profilepic" alt="Profile Picture"></a>-->
     </div>
 
 
@@ -19,6 +19,7 @@
         <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/experiment">Experiments</a></li>
         <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/project">Projects</a></li>
         <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/about">About Me</a></li>
+        <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/about">Learn?</a></li>
       </ul>
 
     <!--</div>-->
@@ -26,16 +27,9 @@
 </nav>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a class="mobile-item-top" href="{{ .Site.BaseURL }}/blog">Blog</a>
+  <a class="mobile-item" href="{{ .Site.BaseURL }}/experiment">Experiment</a>
+  <a class="mobile-item" href="{{ .Site.BaseURL }}/project">Project</a>
+  <a class="mobile-item" href="{{ .Site.BaseURL }}/about">About Me</a>
 </div>
 
-<!-- Use any element to open the sidenav -->
-<span onclick="openNav()">open</span>
-
-<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-<div id="main">
-  ...
-</div>
