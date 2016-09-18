@@ -1,29 +1,17 @@
 <nav class="navbar-flex-group">
 
     <div class="flex-container">
-        <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>-->
-      <!--<li class="icon">-->
-    <a class="flex-item menu" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
-  <!--</li>-->
-      <!--<a class="flex-item" href="{{ .Site.BaseURL }}/"><img src="http://i.imgur.com/SCxqq90.png" class="profilepic" alt="Profile Picture"></a>-->
+      <a class="flex-item menu" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars fa-2x barsmenu" aria-hidden="true"></i></a>
+      <a class="flex-item profile-pic" href="{{ .Site.BaseURL }}/"><img src="http://i.imgur.com/SCxqq90.png" class="profilepic" alt="Profile Picture"></a>
     </div>
 
-
-    <!--<div class="flex-container" id="myNavbar">-->
-      <ul class="flex-container nav-list">
-        <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/blog">Blog</a></li>
-        <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/experiment">Experiments</a></li>
-        <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/project">Projects</a></li>
-        <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/about">About Me</a></li>
-        <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/about">Learn?</a></li>
-      </ul>
-
-    <!--</div>-->
-
+    <ul class="flex-container nav-list">
+      <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/blog">Blog</a></li>
+      <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/experiment">Experiments</a></li>
+      <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/project">Projects</a></li>
+      <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/about">About Me</a></li>
+      <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/about">Learn?</a></li>
+    </ul>
 </nav>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>

@@ -1,3 +1,7 @@
+.navbar-title {
+  color: #FFFFFF;
+  font-size: 120%;
+}
 .navbar-flex-group {
   display: flex;
   background-color: #f96e5b;
@@ -14,30 +18,10 @@
 .nav-list > li {
   padding: 0px 25px;
 }
-.nav-underline:before {
-  visibility: hidden;
-  background-color: #23527c;
-  bottom: 0;
-  content: "";
-  height: 2px;
-  position: absolute;
-  width: 110%;
-  transition: all 0.3s ease-in-out 0s;
-  transform: scaleX(0);
-}
-.nav-underline {
-  position: relative;
-}
-.nav-underline:hover:before {
-  visibility: visible;
-  transform: scaleX(1);
-}
 .nav-list > li > a {
   line-height: normal !important;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   font-size: 120%;
-  border-right: 1px solid;
-  border-left: 2px solid;
   border-spacing: 10px;
   text-decoration: none;
   background-color: transparent;
@@ -57,9 +41,24 @@
   width: 50px;
 }
 .menu {
-  padding-top: 10px;
-  padding-left: 5px;
-  color: #f8f8f8;
+  display: none;
+}
+@media screen and (max-width: 780px) {
+  .profile-pic {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+  .nav-list {
+    display: none;
+  }
+  .menu {
+    display: inline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color: #f8f8f8;
+  }
 }
 /* The side navigation menu */
 .sidenav {
@@ -74,7 +73,7 @@
   top: 0;
   border-radius: 2px;
   left: 0;
-  background-color: #eb5a4b;
+  background-color: #EB5A4B;
   /* Black*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
@@ -87,8 +86,8 @@
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 2.5em;
-  color: #ffffff;
+  font-size: 1.5em;
+  color: #FFFFFF;
   display: block;
   transition: 0.3s;
 }
@@ -124,6 +123,9 @@
 #main {
   transition: margin-left 0.5s;
   padding: 20px;
+}
+.barsmenu:hover {
+  color: #23527c;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {

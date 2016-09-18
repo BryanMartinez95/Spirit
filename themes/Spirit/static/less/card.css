@@ -1,0 +1,16 @@
+.card {
+  background-color: #FFFFFF;
+  margin: 1%;
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.card-picture {
+  width: 100%;
+}
+.card-hover {
+  transition: background-color 0.3s, color 0.15s, box-shadow 0.3s, opacity 0.3s;
+}
+.card-hover:hover {
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}

@@ -13,12 +13,18 @@ body {
 .flex-container {
   display: flex;
 }
+@media screen and (max-width: 780px) {
+  .flex-container {
+    flex-grow: 1;
+  }
+}
 .page-flex-container {
   padding: 50px 15px 15px 15px;
   background-color: white;
   margin: 0 auto;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   max-width: 70em;
+  word-break: break-all !important;
 }
 .centerContent {
   margin: 0 auto;
@@ -37,4 +43,11 @@ body {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.4);
+}
+.picture {
+  max-width: 100%;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }

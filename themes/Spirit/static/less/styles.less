@@ -15,6 +15,13 @@ body{
 //       margin: 0 auto;
 //   max-width: 50em;
 }
+@media screen and (max-width:780px)
+{
+    .flex-container{
+        flex-grow:1;
+    }
+    
+}
 .page-flex-container{
         // display:flex;'
         padding: 50px 15px 15px 15px;
@@ -25,6 +32,7 @@ body{
     // box-shadow: 3px 3px 3px #888888;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     max-width: 70em;
+    word-break:break-all !important;
 }
 .flex-item{
     
@@ -37,8 +45,6 @@ body{
 .construction {
     width:20%;
 }
-
-
 .dim {
     width: 100%;
     min-height: 100%;
@@ -49,4 +55,11 @@ body{
     top: 0;
     left: 0;
     background: rgba(0,0,0,0.4);
+}
+.picture{
+  max-width:100%;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }

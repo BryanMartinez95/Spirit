@@ -3,15 +3,15 @@
     <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>{{ .Title }}</title>
         <!--<link href="{{ .Site.BaseURL }}/css/bootstrap.css" rel="stylesheet">-->
         <!--<link href="{{ .Site.BaseURL }}/css/w3.css" rel="stylesheet">-->
         <link href="{{ .Site.BaseURL }}/css/normalize.css" rel="stylesheet">
-        <link href="{{ .Site.BaseURL }}/css/styles.css" rel="stylesheet">
-        <link href="{{ .Site.BaseURL }}/css/navbar.css" rel="stylesheet">
-        <link href="{{ .Site.BaseURL }}/css/card.css" rel="stylesheet">
-        <link href="{{ .Site.BaseURL }}/css/footer.css" rel="stylesheet">
-        <link href="{{ .Site.BaseURL }}/css/materialize.css" rel="stylesheet">
+        <link href="{{ .Site.BaseURL }}/less/styles.css" rel="stylesheet">
+        <link href="{{ .Site.BaseURL }}/less/navbar.css" rel="stylesheet">
+        <link href="{{ .Site.BaseURL }}/less/card.css" rel="stylesheet">
+        <link href="{{ .Site.BaseURL }}/less/footer.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     </head>
     <body>
@@ -21,34 +21,34 @@
         <div id="content" class="container-fluid"> <!-- Body -->
             <h1 class="text-center">Currently In Production!</h2>
             <div class="">
-                <img class="" src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
-                <img class="" src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
-                <img class="" src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
-                <img class="" src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
+                <img class="picture" src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
+                <img class="picture" src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
+                <img class="picture" src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
+                <img class="picture" src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
             </div>
                 <div class="container-fluid">
                     <div class="">
                     <ul class="card-list">
-                        {{ range .Data.Pages }}
-                        <div class="card">
+                        <!--{{ range .Data.Pages }}-->
+                        <!--<div class="card">
                             <img class="card-picture" src="{{.Params.image}}" alt="gochi">
                             <header class="w3-container">
                                 <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
                             </header>
-                            <div class="w3-container">
+                            <div class="w3-container">-->
                             <!--<p>{{.Summary}}</p>-->
                                 <!--{{ if .Truncated }}
                                 <div class="read-more-link">
                                     <a href="{{ .RelPermalink }}">Read More…</a>
                                 </div>
                                 {{end}}-->
-                            </div>
+                            <!--</div>-->
                             <!--<footer class="w3-container">
                                 {{ .Date.Format "Mon, Jan 2, 2006" }}
                             </footer>-->
 
                         </div>
-                        {{ end }}
+                        <!--{{ end }}-->
                     </ul>
                     </div>
                 </div>

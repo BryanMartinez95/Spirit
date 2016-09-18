@@ -14,3 +14,8 @@
 .footer-link {
   color: #545454;
 }
+@media screen and (max-width: 780px) {
+  .page-footer {
+    display: none;
+  }
+}
