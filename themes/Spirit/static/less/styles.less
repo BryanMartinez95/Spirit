@@ -3,17 +3,12 @@ body,h1,h2,h3,p,a  {
     font-family: 'Roboto', sans-serif !important;
     line-height: 2em;
 }
-// h1{
-//     font-size: 3em;
-// }
 
 body{
     background-color: @grey;
 }
 .flex-container{
     display:flex;
-//       margin: 0 auto;
-//   max-width: 50em;
 }
 @media screen and (max-width:780px)
 {
@@ -32,7 +27,8 @@ body{
     // box-shadow: 3px 3px 3px #888888;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     max-width: 70em;
-    word-break:break-all !important;
+    word-break:normal !important;
+    word-wrap:break-word;
 }
 .flex-item{
     

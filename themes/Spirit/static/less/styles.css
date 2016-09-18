@@ -24,7 +24,8 @@ body {
   margin: 0 auto;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   max-width: 70em;
-  word-break: break-all !important;
+  word-break: normal !important;
+  word-wrap: break-word;
 }
 .centerContent {
   margin: 0 auto;
