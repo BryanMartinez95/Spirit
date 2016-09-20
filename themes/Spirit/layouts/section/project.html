@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-<h1 class="flex-item">Project List</h1>
+<h1 class="text-center">Project List</h1>
     <ul class="flex-item">
     {{ range .Data.Pages }}
     <li class="card"><span><a href="{{ .RelPermalink }}">{{ .Title }}</a><time class="">{{ .Date.Format "Mon, Jan 2, 2006" }}</h4></time></span></span></li>

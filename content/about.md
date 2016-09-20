@@ -21,6 +21,6 @@ I was first introduced into the world of programming in 2014 . I am currently in
 <h2>Personal</h2>
 As for outside programming im a pretty simple guy. I spend a lot of my spare time watching a lot of anime or playing games with my friends. I have been told I can be a pretty sarcastic but patient person. I can be pretty quiet at first but if you get to know me really well I can be quite talkative.
 
-<h2>Contac</h2>
+<h2>Contact</h2>
 <p>Email: B.martinez.95@hotmail.com </p>
 <p>Cell: (403) 909- 5132</p>

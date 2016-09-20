@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-<h1>Experiment List</h1>
+<h1 class="text-center">Experiment List</h1>
     {{ range .Data.Pages }}
     <div class="">
         <li><span><a href="{{ .RelPermalink }}">{{ .Title }}</a><time class="">{{ .Date.Format "Mon, Jan 2, 2006" }}</h4></time></span></span></li>
