@@ -11,7 +11,7 @@ body {
   height: 100%;
 }
 .body {
-  background: url("http://www.pixeden.com/media/k2/galleries/220/006-wood-melamine-subttle-pattern-background-pat.jpg");
+  background: url('http://i.stack.imgur.com/jGlzr.png');
   background-repeat: repeat;
   min-height: 100%;
   padding-bottom: 0px;
@@ -29,7 +29,7 @@ code {
 }
 .page-flex-container {
   padding: 50px 50px 0px 50px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 5px;
   margin: 0 auto;
   margin-top: 2px;
@@ -65,7 +65,6 @@ code {
 }
 .text-center {
   text-align: center;
-  color: white;
 }
 .picture-center {
   display: block;

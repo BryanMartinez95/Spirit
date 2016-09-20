@@ -9,7 +9,6 @@
     
     flex-grow:1;
 }
-
 .nav-list{
     list-style-type: none;
     display:inline-flex;
@@ -20,22 +19,90 @@
 .nav-list > li {
     padding: 0px 25px;
 }
+//  .nav-list > li > a{
+//     line-height:normal !important;
+//     color: @lightgrey !important;
+//     font-size: 130%;
+//     border-bottom: 2px transparent;
+//     border-spacing: 10px;
+//     text-decoration:none;
+//     background-color:transparent;
+//     transition: color .25 ease-in-out;
+//     white-space: nowrap;
+    
+// }
+.nav-list  > li > a:hover{
+    // color:#23527c !important;
+        color:#040303 !important;
+    border-left: 2.5px solid;
+    border-right: 2.5px solid;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 
- .nav-list > li > a{
+}
+.nav-list > li > a{
+    position:relative;
+    border-left: 2.5px solid @orange;
+    border-right: 2.5px solid @orange;
+    padding-right: 5px;
+    padding-left:5px;
+    display:inline-block;
     line-height:normal !important;
     color: @lightgrey !important;
-    font-size: 120%;
-    border-spacing: 10px;
+
+    font-size: 130%;
+    transition: all 0.3s ease-in-out;
     text-decoration:none;
-    background-color:transparent;
-    transition: color .25 ease-in-out;
     white-space: nowrap;
-}
-.nav-list  > li > a:hover{
-    
-    color:#23527c !important;
 
 }
+.nav-list > li > a::before{
+  content:'';
+  width:0;
+  height:2.5px;
+  background:#23527c;
+  position:absolute;
+  left:0;
+  bottom:0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  color:#23527c !important;
+}
+.nav-list > li > a::before{
+  content:'';
+  width:0;
+  height:2.5px;
+//   background:#23527c;
+background:#040303;
+  position:absolute;
+  left:0;
+  bottom:0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  color:#23527c !important;
+}
+.nav-list > li > a::after{
+  content:'';
+  width:0;
+  height:2px;
+//   background:#23527c;
+  background:#040303;
+  position:absolute;
+  top:0;
+  right:0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  color:#23527c !important;
+}
+.nav-list > li > a:hover::after {
+    width: 100%;
+}
+
+.nav-list > li > a:hover::before {
+    width: 100%;
+}
+
+
+
 .orange-header {
     color:@orange;
     background-color: @orange;
@@ -80,7 +147,8 @@
     top: 0;
     border-radius: 2px;
     left: 0;
-    background-color: @darkorange; /* Black*/
+    // background-color: @darkorange; /* Black*/
+    background-color:@orange;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -104,12 +172,13 @@
     border-bottom: 1px solid @grey;
 }
 .mobile-item:hover{
-    color:#23527c !important;
+    // color:#23527c !important;
+    color:#040303 !important;
     padding-left:16px;
     // border-bottom: 1px solid #23527c;
 }
 .mobile-item-top:hover {
-    color:#23527c !important;
+    color:#040303 !important;
     padding-left:16px;
     // border-top: 1px solid #23527c;
     // border-bottom: 1px solid #23527c;
@@ -135,7 +204,8 @@
     padding: 20px;
 }
 .barsmenu:hover{
-    color:#23527c;
+    // color:#23527c;
+    color:#040303;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {

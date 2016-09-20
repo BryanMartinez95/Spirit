@@ -1,6 +1,6 @@
 .navbar-flex-group {
   display: flex;
-  background-color: #545454;
+  background-color: #f96e5b;
   border-bottom-right-radius: 5px;
   line-height: normal !important;
   flex-grow: 1;
@@ -14,71 +14,22 @@
 .nav-list > li {
   padding: 0px 25px;
 }
-.nav-list > li > a:hover {
-  color: #040303 !important;
-  border-left: 2.5px solid;
-  border-right: 2.5px solid;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
 .nav-list > li > a {
-  position: relative;
-  border-left: 2.5px solid #545454;
-  border-right: 2.5px solid #545454;
-  padding-right: 5px;
-  padding-left: 5px;
-  display: inline-block;
   line-height: normal !important;
-  color: #FFFFFF !important;
-  font-size: 130%;
-  transition: all 0.3s ease-in-out;
+  color: #ffffff !important;
+  font-size: 120%;
+  border-spacing: 10px;
   text-decoration: none;
+  background-color: transparent;
+  transition: color 0.25 ease-in-out;
   white-space: nowrap;
 }
-.nav-list > li > a::before {
-  content: '';
-  width: 0;
-  height: 2.5px;
-  background: #23527c;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+.nav-list > li > a:hover {
   color: #23527c !important;
-}
-.nav-list > li > a::before {
-  content: '';
-  width: 0;
-  height: 2.5px;
-  background: #040303;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  color: #23527c !important;
-}
-.nav-list > li > a::after {
-  content: '';
-  width: 0;
-  height: 2px;
-  background: #040303;
-  position: absolute;
-  top: 0;
-  right: 0;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  color: #23527c !important;
-}
-.nav-list > li > a:hover::after {
-  width: 100%;
-}
-.nav-list > li > a:hover::before {
-  width: 100%;
 }
 .orange-header {
-  color: #545454;
-  background-color: #545454;
+  color: #f96e5b;
+  background-color: #f96e5b;
 }
 .profilepic {
   border-radius: 50%;
@@ -102,7 +53,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 /* The side navigation menu */
@@ -118,7 +69,8 @@
   top: 0;
   border-radius: 2px;
   left: 0;
-  background-color: #545454;
+  background-color: #eb5a4b;
+  /* Black*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
   padding-top: 60px;
@@ -132,23 +84,23 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 1.5em;
-  color: #FFFFFF;
+  color: #ffffff;
   display: block;
   transition: 0.3s;
 }
 .mobile-item {
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ffffff;
 }
 .mobile-item-top {
-  border-top: 1px solid #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 .mobile-item:hover {
-  color: #040303 !important;
+  color: #23527c !important;
   padding-left: 16px;
 }
 .mobile-item-top:hover {
-  color: #040303 !important;
+  color: #23527c !important;
   padding-left: 16px;
 }
 /* When you mouse over the navigation links, change their color */
@@ -170,7 +122,7 @@
   padding: 20px;
 }
 .barsmenu:hover {
-  color: #040303;
+  color: #23527c;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
