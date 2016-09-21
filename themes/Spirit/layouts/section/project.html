@@ -1,10 +1,28 @@
 {{ partial "header.html" . }}
 
 <h1 class="text-center">Project List</h1>
-    <ul class="flex-item">
-    {{ range .Data.Pages }}
-    <li class="card"><span><a href="{{ .RelPermalink }}">{{ .Title }}</a><time class="">{{ .Date.Format "Mon, Jan 2, 2006" }}</h4></time></span></span></li>
-    {{ end }}
+    <ul class="card-container">
+        {{ range .Data.Pages }}
+        <div class="card">
+            <a class="card-link" href="{{ .RelPermalink }}">
+            <div class="card-header">
+                <h1>{{ .Title }}</h1>
+            </div>
+            <img class="card-picture" src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="gochi">
+            
+            <!--<div class="w3-container">
+            <p>{{.Summary}}</p>-->
+                <!--{{ if .Truncated }}
+                <div class="read-more-link">
+                    <a href="{{ .RelPermalink }}">Read More…</a>
+                </div>
+                {{end}}-->
+            <!--</div>-->
+            <!--<footer class="w3-container">
+                {{ .Date.Format "Mon, Jan 2, 2006" }}
+            </footer>-->
+</a>
+        </div>
+        {{ end }}
     </ul>
-
 {{partial "footer.html" .}}

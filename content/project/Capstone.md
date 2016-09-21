@@ -2,7 +2,7 @@
 date = "2016-08-31T02:45:57-06:00"
 draft = true
 title = "Capstone"
-image = "http://i.imgur.com/fpDU3DP.gif"
+image = "/images/recursivedelegation/login.PNG"
 +++
 
 <h1>Capstone - Recursive Delegation 2016</h1>
