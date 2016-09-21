@@ -2,12 +2,13 @@
 
 <h1 class="text-center">Blog Posts</h1>
     <div class="">
-    <ul class="">
+    <ul class="card-container">
         {{ range .Data.Pages }}
         <div class="card">
-            <header class="">
-                <h1 class=""><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-            </header>
+            <a href="{{ .RelPermalink }}">
+            <div class="">
+            <h1 class="card-header">{{ .Title }}</h1>
+            </div>
             <img class="card-picture" src="http://i.imgur.com/RgTYBgg.png" alt="gochi">
             
             <!--<div class="w3-container">
@@ -21,7 +22,7 @@
             <!--<footer class="w3-container">
                 {{ .Date.Format "Mon, Jan 2, 2006" }}
             </footer>-->
-
+</a>
         </div>
         {{ end }}
     </ul>
