@@ -71,3 +71,6 @@ code {
   display: block;
   margin: 0 auto;
 }
+.picture-project {
+  max-width: 80%;
+}
