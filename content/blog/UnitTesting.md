@@ -4,7 +4,7 @@ draft = true
 title = "Unit Testing and an Introduction to Mocks"
 image = "http://i.imgur.com/DuetvzL.gif"
 +++
-
+<h1>Unit Testing</h1>
 Today Ill be covering basic unit testing along with the concept of what a Mock is. Before this, we must first define what a "unit" specifically is. The definition of a unit can be different for everyone but can generally be seen as the smallest piece of functionality. For the purposes of this blog post, we'll be using Java "methods" as a unit.
 <h2>Unit Testing With JUnit</h2>
 JUnit is one of the main unit testing frameworks for the Java programming language. JUnit provides many useful tools to allow us to test our code quickly and easily. For example, if i had a UserService and i wanted to test a addUser method, instead of going through the painful process of building a whole front end just to see if it worked properly, I could just create a Unit Test for it and hook it up to run separately from the main application.

@@ -4,6 +4,7 @@ draft = true
 title = "What does testing mean to a software developer?"
 image = "http://i.imgur.com/DuetvzL.gif"
 +++
+<h1>What does testing mean to a software developer?</h1>
 I thought i knew what properly testing my code meant. But as I started to grow as a junior developer, I started to become confused as to what testing really was.
 
 As a result of my research, I have realized that the definition of testing is different between every person and that “testing” is basically a huge contradiction. Through my research i have found that each developer must create their own style and own set of rules. A couple questions you can ask yourself to find out include “How much time do i have to finish this program?”, “How much much time must i devote to testing to make this program solid and bug free?”, “Am i sure that this piece of code works in different scenarios?”. If you can create a application that produces no bugs with zero testing in any situation, than you do not need to test one bit. If your the kind of person who must test every function/class/use case of your application to feel confident in your work, than that is your correct answer. I find that the middle of the two is a good place for me and that testing is a means to get myself in the correct mindset while programming to think from different angles.

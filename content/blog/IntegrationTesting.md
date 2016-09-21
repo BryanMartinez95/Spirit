@@ -4,7 +4,7 @@ draft = true
 title = "Integration Testing"
 image = "http://i.imgur.com/DuetvzL.gif"
 +++
-
+<h1>Integration Testing</h1>
 My experience with integration testing lies mainly with testing entities and database relationships as well as testing database queries. There are many ways to do integration testing as it involves testing multiple layers together to see if they work together properly. This post will specifically use examples that are focused on data access.
 <h2>In-Memory Database</h2>
 A very useful tool to test databases is a In-Memory database, this way if your system is live or your actual database is in a delicate state of some sort, we can create a temporary in-memory database that will construct and de construct itself after every test. Another benefit of a in-memory database is that it proves to be faster than a traditional database because it is sitting in memory. The one I have most experience with is HSQLDB (Hyper SQL database). You can set up your application to use this in memory database at runtime instead of your actual one for safer and faster tests.
