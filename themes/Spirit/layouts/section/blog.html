@@ -1,16 +1,17 @@
 {{ partial "header.html" . }}
 
 <h1 class="text-center">Blog Posts</h1>
-    <div class="">
     <ul class="card-container">
         {{ range .Data.Pages }}
         <div class="card">
             <a class="card-link" href="{{ .RelPermalink }}">
-            <div class="">
+            <!--<div class="card-div-header">
             <h1 class="card-header">{{ .Title }}</h1>
+            </div>-->
+            <div class="card-header">
+                <h1>{{ .Title }}</h1>
             </div>
-            <img class="card-picture" src="http://i.imgur.com/RgTYBgg.png" alt="gochi">
-            
+            <img class="card-picture" src="{{ .Params.image }}" alt="gochi">
             <!--<div class="w3-container">
             <p>{{.Summary}}</p>-->
                 <!--{{ if .Truncated }}
@@ -26,6 +27,5 @@
         </div>
         {{ end }}
     </ul>
-    </div>
 
 {{partial "footer.html" .}}

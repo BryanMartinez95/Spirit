@@ -121,14 +121,19 @@ background:#040303;
 {
     .profile-pic{
         display:flex;
-        flex-grow: 1;
-
+        width:50px;
         justify-content: flex-end;
+    }
+    .fill{
+        display:flex !important;
+        flex-grow:3;
+        justify-content: center;
     }
     .nav-list{
         display:none;
     }
     .menu {
+        padding-right: 15px;
         display:inline;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -137,7 +142,9 @@ background:#040303;
     }
 
 }
-
+.fill{
+    display:none;
+}
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */

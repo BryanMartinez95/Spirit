@@ -91,19 +91,28 @@
 @media screen and (max-width: 780px) {
   .profile-pic {
     display: flex;
-    flex-grow: 1;
+    width: 50px;
     justify-content: flex-end;
+  }
+  .fill {
+    display: flex !important;
+    flex-grow: 3;
+    justify-content: center;
   }
   .nav-list {
     display: none;
   }
   .menu {
+    padding-right: 15px;
     display: inline;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     color: #FFFFFF;
   }
+}
+.fill {
+  display: none;
 }
 /* The side navigation menu */
 .sidenav {

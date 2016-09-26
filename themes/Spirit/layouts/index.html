@@ -11,12 +11,13 @@
         <!--<link rel="icon" href="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png">-->
         <!--<link href="{{ .Site.BaseURL }}/css/bootstrap.css" rel="stylesheet">-->
         <!--<link href="{{ .Site.BaseURL }}/css/w3.css" rel="stylesheet">-->
-        <link href="{{ .Site.BaseURL }}/css/normalize.css" rel="stylesheet">
+        <!--<link href="{{ .Site.BaseURL }}/css/normalize.css" rel="stylesheet">
         <link href="{{ .Site.BaseURL }}/less/styles.css" rel="stylesheet">
         <link href="{{ .Site.BaseURL }}/less/index.css" rel="stylesheet">
         <link href="{{ .Site.BaseURL }}/less/navbar.css" rel="stylesheet">
         <link href="{{ .Site.BaseURL }}/less/card.css" rel="stylesheet">
-        <link href="{{ .Site.BaseURL }}/less/footer.css" rel="stylesheet">
+        <link href="{{ .Site.BaseURL }}/less/footer.css" rel="stylesheet">-->
+        <link href="{{ .Site.BaseURL }}/css/minified09-26.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     </head>
     <body>
@@ -24,14 +25,14 @@
     <div class="body"> <!-- Page -->
         {{ template "theme/partials/nav.html" }}
         <div id="content" class="container-fluid"> <!-- Body -->
-            <h1 class="text-center">Currently In Production!</h2>
-            <div class="">
+            <h1 class="text-center">Currently In Development !</h2>
+            <!--<div class="">
                 <img class="picture picture-center" src="http://orig04.deviantart.net/632f/f/2013/125/9/3/kirby_by_peekingboo-d646ci8.gif"/>
-            </div>
-                <div class="container-fluid">
+            </div>-->
+                <!--<div class="container-fluid">
                     <div class="">
                     <ul class="card-list">
-                        <!--{{ range .Data.Pages }}-->
+                        {{ range .Data.Pages }}-->
                         <!--<div class="card">
                             <img class="card-picture" src="{{.Params.image}}" alt="gochi">
                             <header class="w3-container">
@@ -50,10 +51,38 @@
                             </footer>-->
 
                         <!--</div>-->
-                        <!--{{ end }}-->
+                        <!--{{ end }}
                     </ul>
                     </div>
+                </div>-->
+        <ul class="card-container">
+        {{ range .Data.Pages }}
+        {{ if eq .Params.main "1" }} 
+        <div class="card">
+            <a class="card-link" href="{{ .RelPermalink }}">
+            <!--<div class="card-div-header">
+            <h1 class="card-header">{{ .Title }}</h1>
+            </div>-->
+            <div class="card-header">
+                <h1>{{ .Title }}</h1>
+            </div>
+            <img class="card-picture" src="{{ .Params.image }}" alt="gochi">
+            <!--<div class="w3-container">
+            <p>{{.Summary}}</p>-->
+                <!--{{ if .Truncated }}
+                <div class="read-more-link">
+                    <a href="{{ .RelPermalink }}">Read More…</a>
                 </div>
+                {{end}}-->
+            <!--</div>-->
+            <!--<footer class="w3-container">
+                {{ .Date.Format "Mon, Jan 2, 2006" }}
+            </footer>-->
+</a>
+        </div>
+        {{ end }}
+        {{ end }}
+    </ul>
         </div>
         {{ template "theme/partials/footer.html" }}	
     </div>

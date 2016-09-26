@@ -2,7 +2,8 @@
 date = "2016-09-14T23:24:41-07:00"
 draft = true
 title = "What does testing mean to a software developer?"
-image = "http://i.imgur.com/DuetvzL.gif"
+image = "/images/blog/testingmeaning.jpg"
+main = "1"
 +++
 <h1>What does testing mean to a software developer?</h1>
 I thought i knew what properly testing my code meant. But as I started to grow as a junior developer, I started to become confused as to what testing really was.

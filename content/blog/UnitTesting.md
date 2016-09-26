@@ -2,7 +2,8 @@
 date = "2016-09-14T23:26:50-07:00"
 draft = true
 title = "Unit Testing and an Introduction to Mocks"
-image = "http://i.imgur.com/DuetvzL.gif"
+image = "/images/blog/unittesting.jpg"
+main = "1"
 +++
 <h1>Unit Testing</h1>
 Today Ill be covering basic unit testing along with the concept of what a Mock is. Before this, we must first define what a "unit" specifically is. The definition of a unit can be different for everyone but can generally be seen as the smallest piece of functionality. For the purposes of this blog post, we'll be using Java "methods" as a unit.

@@ -2,7 +2,8 @@
 date = "2016-09-14T23:25:43-07:00"
 draft = true
 title = "Integration Testing"
-image = "http://i.imgur.com/DuetvzL.gif"
+image = "/images/blog/Integration.jpg"
+main = "1"
 +++
 <h1>Integration Testing</h1>
 My experience with integration testing lies mainly with testing entities and database relationships as well as testing database queries. There are many ways to do integration testing as it involves testing multiple layers together to see if they work together properly. This post will specifically use examples that are focused on data access.

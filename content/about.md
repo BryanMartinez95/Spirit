@@ -4,6 +4,7 @@ draft = true
 title = "About"
 type = "about"
 image = "http://i.imgur.com/NaPRyjb.png"
+main = 0
 +++
 
 <h1>About</h1>
@@ -24,3 +25,5 @@ As for outside programming im a pretty simple guy. I spend a lot of my spare tim
 <h2>Contact</h2>
 <p>Email: B.martinez.95@hotmail.com </p>
 <p>Cell: (403) 909- 5132</p>
+<br />
+<br />
