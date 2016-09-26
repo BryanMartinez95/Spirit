@@ -5,27 +5,32 @@ function openNav() {
     
     // document.getElementById("content").style.backgroundColor = "rgba(0,0,0,0.4)";
     // document.getElementById("content").style.opacity = "0.5";
-    $('.dim').fadeIn(200);
-    $('body').addClass('stop-scrolling');
+    // $('.dim').fadeIn(200);
+    // $('body').addClass('stop-scrolling');
+    var d = document.getElementById("body");
+    d.className += " stop-scrolling";
     event.stopPropagation();
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    $('.dim').fadeOut(200);
-    $('body').removeClass('stop-scrolling');
+    // $('.dim').fadeOut(200);
+    var d = document.getElementById("body");
+    d.className += " stop-scrolling";
     // document.getElementById("content").style.backgroundColor = "white";
 }
 
 $('html').click(function() {
   //Hide the menus if visible
-  $('body').removeClass('stop-scrolling');
+//   $('body').removeClass('stop-scrolling');
+    var d = document.getElementById("body");
+    d.className -= " stop-scrolling";
   var width= document.getElementById("mySidenav").style.width;
   if(width != "0")
   {
     document.getElementById("mySidenav").style.width = "0";
-     $('.dim').fadeOut(200);
+    //  $('.dim').fadeOut(200);
   }
 
 //   document.getElementById("content").style.backgroundColor = "white";
