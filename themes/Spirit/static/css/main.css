@@ -1,3 +1,142 @@
+body,
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: 'Roboto', sans-serif !important;
+  line-height: 2em;
+}
+body {
+  min-height: 100%;
+  background-color: #252525;
+}
+code {
+  font-family: monospace !important;
+}
+.flex-container {
+  display: flex;
+}
+@media screen and (max-width: 780px) {
+  .flex-container {
+    flex-grow: 1;
+  }
+}
+.page-flex-container {
+  padding: 50px 50px 0px 50px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 2px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  max-width: 60em;
+  word-break: normal !important;
+  word-wrap: break-word;
+}
+.centerContent {
+  margin: 0 auto;
+  max-width: 50em;
+}
+.construction {
+  width: 20%;
+}
+.dim {
+  width: 100%;
+  min-height: 100%;
+  z-index: -6;
+  display: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.picture {
+  max-width: 100%;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
+  color: white;
+}
+.picture-center {
+  display: block;
+  margin: 0 auto;
+}
+.picture-project {
+  max-width: 80%;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  justify-content: center;
+  padding-left: 0;
+}
+.card {
+  opacity: 0.85;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #CCCCCC;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  min-height: 350px;
+  width: 400px;
+  border-radius: 2px;
+  transition: 0.2s ease-in-out;
+  border: 3px solid black;
+}
+.card:hover {
+  opacity: 1;
+  border-color: white;
+}
+.card-summary {
+  display: none;
+}
+.card-picture {
+  max-width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+.card-header {
+  max-height: 128px;
+  text-decoration: none !important;
+  margin: 0 auto;
+  color: #141823;
+  text-align: center;
+}
+.card-header h1 {
+  line-height: 1.5em !important;
+}
+.card-link {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+.page-footer {
+  bottom: 0;
+  position: fixed;
+  text-align: right;
+  width: 100%;
+}
+.footer-icon-list li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.footer-link {
+  color: #545454;
+}
+@media screen and (max-width: 780px) {
+  .page-footer {
+    display: none;
+  }
+}
 .navbar-flex-group {
   display: flex;
   background-color: #545454;

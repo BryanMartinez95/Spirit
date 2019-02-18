@@ -1,1 +1,6 @@
-single
+{{ partial "header.html" . }}
+<div class="page-flex-container">
+{{ .Content }}
+
+</div>
+{{partial "footer.html" .}}

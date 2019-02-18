@@ -13,3 +13,12 @@ About Me: A section that describes who I am
 
 Spirit is currently in development and is hosted at:
 https://bryanmartinez95.github.io/
+
+
+
+
+BUILD REQUIREMENTS
+hugo server --buildDrafts -t spirit
+https://www.npmjs.com/package/less-watch-compiler
+less-watch-compiler less css main.less 
+    (inside the spirit/static directory)

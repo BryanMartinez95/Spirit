@@ -1,16 +1,21 @@
 # theme.toml template for a Hugo theme
-# See https://github.com/spf13/hugoThemes#themetoml for an example
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
 name = "Spirit"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
 description = ""
-homepage = "http://siteforthistheme.com/"
-tags = ["", ""]
-features = ["", ""]
-min_version = 0.15
+homepage = "http://example.com/"
+tags = []
+features = []
+min_version = "0.41"
 
 [author]
-  name = "Bryan Martinez"
+  name = ""
   homepage = ""
 
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""
